@@ -1,0 +1,12 @@
+data type ---> string, number, boolean,
+variable --> a ,b arr1,name,
+var ko hum bloack k andr likh k bhar sy b call kr sakty h ur let ur const ko call nai kr sakty
+
+7type of primitive data type: null,number,string,symbol,boolean,bigint,undefined.
+2 Type of non primitive data type : object, array.
+
+TypeCasting: Ye ek tareeka h number of string mai convert krny ka.
+
+object.key(marks).length --> object k andr sari ki sari keys dy ka ur length dy ga ek array k andr..
+ 
+forEach--> ye har array element pr chalty h hum

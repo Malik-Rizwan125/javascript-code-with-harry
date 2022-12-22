@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+<body>
+    <script>
+        let array = [2,3,4,5]
+           ////////////////toString
+        // let b = array.toString()
+        // console.log(b, typeof b);
+           ////////////////join
+        // console.log(array.join("-"));  // , + and
+        // console.log(array.join("/"));
+
+           ////////////////pop
+
+        // array.pop()  // last value remove
+        // console.log(array);
+
+           ////////////////push
+
+        // array.push(77) // add one element and return new array length 
+        // console.log(array);
+
+           ////////////////shift
+
+        // array.shift()   // remove first element of the array
+        // console.log(array);
+
+          ////////////////unshift
+
+        // array.unshift(255,66,77,)   // add element in a new array
+        // console.log(array);
+
+          ////////////////delete
+
+        // delete array[2]   // delete element no 2 but index element is not decrease
+        // console.log(array);
+        // console.log(array.length);
+          ////////////////concat
+        // let new_array = [6,7,8,9,10]
+        // let includeMoreArray = [11,12,13,14,15,16,17]
+        // let total_Array = array.concat(new_array,includeMoreArray)
+        // console.log(total_Array);
+
+           ////////////////sort
+
+        // let compare = (a,b) =>{
+        //     return a - b; // assanding order
+        //     // return b - a; // dessanding order
+        // }
+        // let sortArray = [2,8,224,32,14,19,4,68,6]  
+        // // sortArray.sort()  // here sort alphaticlly
+        // sortArray.sort(compare)
+        // // sortArray.sort(function(a, b){return a - b}) 
+        // console.log(sortArray);
+
+            ////////////////reverse
+
+        // let string_Array = [2,6,3,7,8,983,11,22,55,67,87,39]
+        // string_Array.reverse()
+        // console.log(string_Array);
+
+           ////////////////splice//////////////slice
+
+           let string_Array = [2,6,3,22,55,67,87,39]
+        //    string_Array.splice(2,3,1000,2000,3000,4000,5000)
+        //    console.log(string_Array)
+        
+        let newArray=string_Array.slice(2,6)  // is k liye humy new array banani parti h ye usi array ko modify nai krta
+        console.log(newArray)
+
+
+
+
+    </script>
+    
+</body>
+</html>

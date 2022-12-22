@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional expressions</title>
+</head>
+<body>
+    <script>
+        // let a = prompt("Whats your Ages")
+        // a = Number.parseInt(a) // convert string into number
+        // if(a>=0){
+        //     alert("This is a valid age")
+        // }
+
+        let num1= 20;
+        if(num1>10){
+            console.log("num1 is:", num1)
+        }
+
+        let number1 = 20;
+        let number2 = 25;
+        if(number1>=number2){
+            console.log("Number1 is greater", number1)
+        }else {
+            console.log("Number2 is greate:" , number2)
+        }
+
+        let number11 = 40;
+        let number12 = 25;
+        let number13 = 350;
+
+        if(number11 >= number12 && number11 >= number13){
+                console.log("number11 is greater then number12 and number13")
+        } else if(number12 >= number11 && number12 >= number13){
+            console.log("number12 is greater then number11 and number13")
+        }else if(number13 >= number11 && number13 >= number12){
+            console.log("number13 is greater then number11 and number12")
+        }else{
+            console.log("This is not aa number comparing");
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>

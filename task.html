@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+    <script>
+    //     let a = 10
+    //     let name = "rizwan"
+       
+    //   for(let i=0 ; i<a ; i++){
+             
+    //            console.log(name)
+    //    }
+
+    // let name = "Sumsols"
+    // for(let user in name){
+    // console.log(`${user}`)
+    //     // console.log("total index in a string" + name[user])
+    // }
+
+    let person = {}
+    let qulification = 'simple';
+
+    person.name="Rizwan";
+    person.phone=123456;
+    person.email="Ab@gmail.com";
+    person.qulification = ["matric","icom","bs"];
+    console.log(qulification);
+    console.log(person.qulification);
+
+    // console.log(person.qulification)
+
+    for(let item in person.qulification){
+       console.log(item, person.qulification[item]);
+    }
+
+   // prime number
+   let primeNum = prompt("Enter any num")
+
+   if(primeNum % 5 == 0 || primeNum % 7 == 0 || primeNum % 11 == 0 || primeNum % 13 == 0){
+    console.log(`${primeNum} is a prime number`)
+   }else {
+    console.log((`${primeNum} is not a prime number`))
+   }
+
+
+    </script>
+</body>
+
+</html>

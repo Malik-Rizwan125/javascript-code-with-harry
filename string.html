@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        let frnd1 = "Rehan"
+        let frnd2 = "Rizwan"
+        let sentance = `${frnd1} is a friend of ${frnd2}`
+        console.log(sentance)
+
+        console.log("length of frnd1 string",frnd1.length)
+
+        let countryName = 'Pakistan'
+        let provinceName = 'Punjab'
+
+        console.log(countryName.toUpperCase())
+        console.log(countryName.toLowerCase())
+        console.log(countryName.slice(1,7)) // in slice last index not include
+        console.log(countryName.slice(1)) // if i enter one parameter he print all the index.where we should start
+        console.log(countryName.replace('is', 'pppp')) // its case senstive
+        console.log(provinceName.concat (" is a province of " ,countryName))
+
+        let string = "        trim       "
+        console.log(string.trim())
+    </script>
+</body>
+</html>
