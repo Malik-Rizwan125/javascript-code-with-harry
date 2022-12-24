@@ -29,15 +29,83 @@
         // }
 
 
-        let arrayUsingloop = [2,3,5,6,7,9]
+        /* let arrayUsingloop = [2,3,5,6,7,9]
+ 
+         // for(let i=0;i<arrayUsingloop.length; i++){
+         //     console.log(arrayUsingloop[i])
+         // }
+ 
+         arrayUsingloop.forEach((element)=>{
+               console.log(element*element)
+         })
+         for(let item of arrayUsingloop){
+             console.log(item)
+         }
+         for(let index in arrayUsingloop){
+             console.log(index,arrayUsingloop[index])
+         } */
 
-        // for(let i=0;i<arrayUsingloop.length; i++){
-        //     console.log(arrayUsingloop[i])
-        // }
+        //////////pratices exercise//////////
 
-        arrayUsingloop.forEach((element)=>{
-              console.log(element*element)
+        //////////  Push value into the array
+
+        /*
+           let PushValue = [11,22,33,44,55]
+           PushValue.push(666,777)
+           console.log(PushValue)
+    
+            /////// Take a value into the user and add into the array
+    
+            let AddValue = [11,22,33,44,55]
+            let a = prompt("Enter the value")
+            a = Number.parseInt(a)
+            AddValue.push(a)
+    
+            console.log(AddValue)
+        */
+
+        /////// take input form the user until value is not 0
+
+        /* let inputValue = [11,22,33,44,55]
+         let value1;
+         do{
+             value1 = prompt("Enter the value")
+             value1 = Number.parseInt(value1)
+             inputValue.push(value1)
+         }while(value1!=0)
+         console.log(inputValue)
+         */
+
+        /////// using filter take a value of array and every value divid by 10
+
+        let filterValue = [22, 33, 55, 10, 50, 40]
+
+        let NewFilter = filterValue.filter((item) => {
+            return item % 10 == 0;
         })
+        console.log(NewFilter)
+
+        /////// square of all array value
+
+        /////////////Q1
+        let mapValue = [2, 3, 5, 10, 50, 40]
+
+        let NewmapValue = mapValue.map((item) => {
+            return item * item;
+        })
+        console.log(NewmapValue)
+
+        /////////////Q2
+        let arrayValue = [2, 3, 5, 11, 15, 14]
+        let squere;
+        for (let item of arrayValue) {
+            square = item * item
+            console.log(square);
+        }
+
+        /////// Reduce calculate factorail of given value in array
+
+        
 
     </script>
 </body>

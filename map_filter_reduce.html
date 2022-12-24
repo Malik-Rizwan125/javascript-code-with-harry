@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map+Filter+Reduce</title>
+</head>
+
+<body>
+    <script>
+        /////////map--> make new array
+
+        let mapValue = [3, 44, 55, 63, 93, 9]
+
+        // mapValue.map((value)=>{
+        //       console.log(value)
+        // })
+
+        // let newArray= mapValue.map((value)=>{
+        //       console.log(value)
+        //       return value;   //agr value ho array[] mai he print krwana ho tu hum usko ek veriable mai store krty h
+        //     //   return value + 1; 
+        //     })
+        // console.log(newArray)
+
+        // let newArray = mapValue.map((value, index, array) => {
+        //     console.log(value, index, array)
+        //     return value;
+        //     //   return value + 1; 
+        // })
+        // console.log(newArray)
+
+
+        /////////filter-->
+
+        // let filterValue = [3, 44, 55, 63, 93, 9]
+
+        // let newFilter = filterValue.filter((Element) => {
+        //     //  console.log(Element)
+        //     return Element < 20
+        // })
+        // console.log(newFilter);
+
+        /////////reduce-->
+
+        let reduceValue = [3, 4, 5, 3, 9, 7]  // he calculate all the element index
+        let newreduceValue = reduceValue.reduce((h1,h2)=>{  // is function ko hum alag ek veriable mai b bana sakta ur parameter mai function name add kr dy gye
+            return h1+h2;
+        })
+        console.log(newreduceValue);
+
+        let addReduce = [1,2,3,4,5]
+        let newReduce = addReduce.reduce((a,b)=>{
+              return a+b
+        })
+        console.log(newReduce)
+
+
+
+    </script>
+</body>
+
+</html>

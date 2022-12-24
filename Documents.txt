@@ -10,3 +10,13 @@ TypeCasting: Ye ek tareeka h number of string mai convert krny ka.
 object.key(marks).length --> object k andr sari ki sari keys dy ka ur length dy ga ek array k andr..
  
 forEach--> ye har array element pr chalty h hum
+
+BOM-->browser object model-->BOM humy additional object fram krta h. is sy hum window browser ka km ly sakty h mtlb agr mai ny button pr click kiya tu wo humy fackbook page pr ly jaye ya youtube pr ly jaye
+
+DOM-->Document object model  --> html k sary page ko object bana dy ga tu wo document object model ban jaye ga
+console.log(document.body) // html ka body part show krwa dy ga 
+document.body.style.background = "red" // is sy app page style b change kr sakty hai
+
+first child mean-->pehla child
+last child mean-->last child
+childNode mean sary child
