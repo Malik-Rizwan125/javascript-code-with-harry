@@ -14,26 +14,52 @@
             return a + b;
         }
         // console.log(sum(3, 4))
-        let total = sum(3,4)
+        let total = sum(3, 4)
         console.log(total);
 
 
         //practices question
         let age = prompt("Enter any value")
-        age=Number.parseInt(age)
+        age = Number.parseInt(age)
 
-        const drive=(age)=>{
-            return age>=18?true:false
+        const drive = (age) => {
+            return age >= 18 ? true : false
         }
-        if(drive(age)){
-                alert("You can drived")
-        }else{
+        if (drive(age)) {
+            alert("You can drived")
+        } else {
             alert("you can't drive")
         }
 
+
+        /////////// function with parameter and prompt value ///////////
+
+        const promptFun = (name, age1) => {
+            console.log(`Your name is ${name} and your age is ${age1}`)
+            document.write(`Your name is ${name} and your age is ${age1}`)
+        }
+        let name = prompt("Enter your name :");
+        let age1 = prompt("Enter your age :");
+        promptFun(name, age1)
+
+        // sum of value
+        const value = (a, b) => {
+            console.log(a + b)
+        }
+        value(3, 7)
+
+
+        const value1 = (a,b)=>{
+            console.log(a+b)
+            // console.log(`sum of value: ${a} + ${b}`)
+        }
+        let a = parseFloat(prompt("Enter value of a: "))
+        let b = parseFloat(prompt("Enter value of b: "))
+        let add = value1(a,b)
+        // console.log(add)
     </script>
 
-    
+
 </body>
 
 </html>

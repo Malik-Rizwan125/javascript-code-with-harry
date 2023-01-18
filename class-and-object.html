@@ -1,0 +1,104 @@
+<script>
+    class hello {
+        message() {
+            document.write(`Hello EveryOne <br>`)
+        }
+        sorry() {
+            document.write(`Sorry EveryOne <br>`);
+        }
+    }
+    let a = new hello();
+    a.message();
+    a.sorry();
+
+
+//     const population = {
+//         male: 4,
+//         female: 93,
+//         others: 10
+//     };
+//     let genders = Object.keys(population)
+//     console.log(genders);
+//     document.write(`Output simple: ${genders} <br>`);
+
+// // forEach loop on object
+
+//  genders.forEach((item)=>{
+//     console.log(item)
+//  })
+//  document.write(`Output using forEach :${genders} <br>`);
+
+// // forEach loop on object and get index
+
+//  genders.forEach((item)=>{
+//     console.log(` there are ${population[item]} ${item}`)
+//  })
+
+//  document.write(`Output using forEach :${genders[item]} <br>`);  // problem in output ??????????????
+
+
+// let's use this method to sum all the population by looping through so we know the total population:
+// 1) object.key--> is mai ye humy object ki key dy ga array mai like "name","age",
+const population= {
+  male: 4,
+  female: 93,
+  others: 10
+};
+let totalPopulation = 0;
+let genders = Object.keys(population)
+
+genders.forEach((element)=>{
+     totalPopulation += population[element];
+     console.log(`Total population is : ${totalPopulation}`);
+})
+document.write(`Total population is : ${totalPopulation} <br>`)
+
+
+// 2) object.value--> is mai humhumaye ye object ki value dy ga array mai like 24,45,67,76,43
+
+const population1= {
+  male: 77,
+  female: 93,
+  others: 57
+};
+
+let numbers = Object.values(population1)  // pass value
+// Print the object key value
+numbers.forEach((number)=>{
+    console.log(number)
+})
+
+//print the total sum of value
+let totalPopulationValue = 0
+numbers.forEach((index)=>{
+       totalPopulationValue += index  // index humny yaaha is liye use kia ta k humy object ki just value milye
+})
+
+document.write(`Total sum of object value is : ${totalPopulationValue} <br> `)
+
+// 3) object.entities--> 
+
+const population2= {
+  male: 77,
+  female: 93,
+  others: 57
+};
+
+let populationArray = Object.entries(population2)
+// console.log(populationArray);
+document.write(` ${populationArray} <br> `);
+
+// using for loop get value inside of array
+
+for(let array of populationArray){
+    // console.log(array)
+    document.write(`${array} <br>`)
+}
+
+// destructing of array
+
+// for ([key, value] of populationArray){
+//   console.log(key, value);
+//   document.write(`${key}, ${value} <br>`);
+// } 
+</script>

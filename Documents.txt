@@ -1,6 +1,6 @@
 data type ---> string, number, boolean,
 variable --> a ,b arr1,name,
-var ko hum bloack k andr likh k bhar sy b call kr sakty h ur let ur const ko call nai kr sakty
+var ko hum block k andr likh k bhar sy b call kr sakty h ur let ur const ko call nai kr sakty
 
 7type of primitive data type: null,number,string,symbol,boolean,bigint,undefined.
 2 Type of non primitive data type : object, array.
@@ -10,8 +10,13 @@ TypeCasting: Ye ek tareeka h number of string mai convert krny ka.
 object.key(marks).length --> object k andr sari ki sari keys dy ka ur length dy ga ek array k andr..
  
 forEach--> ye har array element pr chalty h hum
+substr same slice ki tara he km krta h but ye last wala index b return krta h
+
 
 BOM-->browser object model-->BOM humy additional object fram krta h. is sy hum window browser ka km ly sakty h mtlb agr mai ny button pr click kiya tu wo humy fackbook page pr ly jaye ya youtube pr ly jaye
+
+
+Dom: element.
 
 DOM-->Document object model  --> html k sary page ko object bana dy ga tu wo document object model ban jaye ga
 console.log(document.body) // html ka body part show krwa dy ga 
@@ -20,3 +25,12 @@ document.body.style.background = "red" // is sy app page style b change kr sakty
 first child mean-->pehla child
 last child mean-->last child
 childNode mean sary child
+
+Async:--> Async mai hum apny code ko intazar krwa sakty h k pehly ye code chaly phr dosra chaly as soon on...
+try catch:-->try catch hum is liye use krty h k agr error koi a raha h tu baki code na roky wo b print ho ur jo error araha h wo b muje ko console mai show krwao
+
+
+abstraction:-->abstraction mai hum internal detail ko hide kr lety h
+encapsulation:-->encapsulation mai hum 4 5 cheezo ko mila k ek cheez bana dy gye like camera,screen speaker,keypboard,etc ye cheezy mila k hum laptop banta h isko hum encapulation kehty h
+inheritance:--> apny agr mobile phone banaya tu ap mmini phone b bana sakty h
+Polymorphism:--> ek chhez alag alag form or type like apka phone mobile b camera b h black board b h etc,

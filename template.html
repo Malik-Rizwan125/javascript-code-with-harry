@@ -1,0 +1,99 @@
+<script>
+
+    /////////// Template string
+    var user = "Malik"
+    var assignName = `Rizwan ${user}`  // user ki value ko hum kis string mai use krna ho tu asy kr sakty h
+    console.log(assignName);
+
+    let firstName = "malik";
+    let lastName = "Rizwan";
+
+    ///////// Simple function
+
+    // function fullName(a , b){
+    //     return `My First name is ${a} and Last name is ${b}`
+    // }
+
+    ///////// Arrow function
+
+    const fullName = (a, b) => {
+        return `My First name is ${a} and Last name is ${b}`
+    }
+
+    let users = `hello ${fullName(firstName, lastName)}`
+    console.log(users)
+
+    ///////// Rest operator
+
+    // function sum(name,course, ...args) {
+    //     document.write(`Hello Rizwan ${name} your course is ${course}:`)
+    //     let sum = 0;
+    //     for (let i in args) {
+    //         sum += args[i];
+    //     }
+    //     console.log(` ${sum} `)
+    //     document.write(` ${sum} <br>`);
+    // }
+    // sum("how are you sir","BA", 20, 30, 50);
+
+    // sum("sirr","BS",20, 30, 50, 100)
+
+
+// spread operator  ye array ki value ko alag alag kr deta h
+
+function sum(name,course, ...args){  //parameter ... 3dot represent rest operator
+    document.write(`Hello Rizwan ${name} your course is ${course}:`)
+        let sum = 0;
+        for (let i in args) {
+            sum += args[i];
+        }
+        console.log(` ${sum} `)
+        document.write(` ${sum} "<br>"`);
+    }
+    let arr = [ 20, 30, 50,1000]
+    sum("how are you sir","BA", ...arr); // ...dot is present spread operator
+
+    sum("sirr","BS",20, 30, 50, 100)
+
+
+
+let arr1 = [20,40,50,60]
+let arr2 = [20,35,60]
+let arr3 = [5,...arr1, ...arr2,7]
+console.log(arr3);
+
+var obj1 = {
+    name : 'Rizwan',
+}
+var obj2 = {
+    age : 25,
+}
+
+var obj3 = {...obj1 , ...obj2}
+console.log(obj3 );
+
+
+/////////////// Array destructure
+ let user1 = ["Malik", 25,6858 ,"Rizwan"]
+ let [name , age = 20, rollNo, otherName] = user1;
+ document.write(`your first name ${name} your age ${age} your roll no ${rollNo} other name is ${otherName} <br>` );
+ console.log(name,age,rollNo,otherName);
+
+/////////////// another array destructure code
+let user2 = ["Malik", 25,6858 ,35,76,87,87,55,44,33,33]
+
+let [name1, ...args] = user2
+document.write(`your name is ${name1} and left value is : ${args} <br> `)
+
+/////////////// object destructure code
+
+let objDest = {
+    name2 : 'Rizwan',
+    id : '25',
+    city : 'Faisalabad'
+}
+
+let {name2,id,city} = objDest
+document.write(`Your name is ${name2} and your age ${id} and your city name is ${city} `)
+
+</script>

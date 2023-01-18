@@ -1,0 +1,25 @@
+<script>
+    // let complete = true;
+    // let prom = new Promise(function (resolve, reject) {
+    //     if (complete) {
+    //         resolve("I am successfull"); // resolve method
+    //     } else {
+    //         reject("I am reject");   // reject method
+    //     }
+    // })
+    // console.log(prom);
+
+    //promise with function
+
+    function  prom(complete){
+        return new Promise(function (resolve, reject) {
+        if (complete) {
+            resolve("I am successfull"); // resolve method
+        } else {
+            reject("I am reject");   // reject method
+        }
+    })
+}
+console.log(prom(false));
+
+</script>
