@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread operator</title>
+</head>
+
+<body>
+    <script>
+        function sum(a, b, c) {
+            console.log("Sum of number spread number:", "", a + b + c)
+        }
+        var arrVal = [2, 5, 8];
+        sum(...arrVal)
+
+        var arr1 = [1, 2, 3]
+        var arr2 = [4, 5, 6]
+        var arr3 = [7, 8, 9]
+        // first option in concat array
+        var arr1 = arr1.concat(arr2, arr3);
+        console.log(arr1)
+
+        // second option
+        arr1 = [...arr1, ...arr2, ...arr3]
+        console.log(arr1)
+        console.log("using spread operator merge value:", "", (arr1))
+
+        // 3rd way to use spread operator
+
+        var arrc1 = [5, 10, 15];
+        console.log(arrc1)
+        arrc1.push(20, 25); //push 2 value in array
+        console.log("push 20 and 25", " ", arrc1)
+
+        //Push value using spread operator
+        arrc1 = [...arrc1, 30, 35]
+        console.log("push more value 30 and 35 using spread operator", "", arrc1)
+
+
+    </script>
+</body>
+
+</html>

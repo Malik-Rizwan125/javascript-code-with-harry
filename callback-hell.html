@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback hell</title>
+</head>
+
+<body>
+
+    <script>
+        // 1: 2s student roll no
+        // 2: 2s 2nd name and age
+        // 3: 2 gender 
+
+        const getRollNo = () => {
+            setTimeout(() => {
+                console.log("getting roll no");
+                let roll_no = [1, 2, 3, 4, 5];
+                console.log(roll_no);
+                setTimeout((rollno) => {
+                    let bioData = {
+                        name: "Rizwan",
+                        age: 25,
+                    }
+                    console.log(`my name is ${bioData.name} and my age is ${bioData.age}`);
+                    setTimeout((name) => {
+                        bioData.gender = "male";
+                        console.log(`my name is ${bioData.name} and my age is ${bioData.age} and my gender is ${bioData.gender}`)
+                    }, 2000, bioData.name)
+
+                }, 2000, roll_no[2]) // roll_no take a argument
+
+            }, 2000)
+        }
+
+        getRollNo()
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -21,7 +21,7 @@
         // let newArray= mapValue.map((value)=>{
         //       console.log(value)
         //       return value;   //agr value ko array[] mai he print krwana ho tu hum usko ek veriable mai store krty h
-        //     //   return value + 1; 
+        //     //   return value + 1;   // agr humny value mai kuch increment krwana ho to hum return m increament krwa dety h
         //     })
         // console.log(newArray)
 
@@ -41,12 +41,12 @@
         // })
         // console.log(newArray)
 
-        // let newArray = mapValue.filter((value, index, array) => {
+        // let newArray1 = mapValue.filter((value, index, array) => {
         //     console.log(value, index, array)
-        //     return value;
-        //     //   return value >5 5; 
+        //     // return value;
+        //     return value > 50 ; 
         // })
-        // console.log(newArray)
+        // console.log(newArray1)
 
         //////// end code //////// differance between map and filter
 
@@ -62,15 +62,15 @@
 
         /////////reduce-->
 
-        // let reduceValue = [3, 4, 5, 3, 9, 7]  // he calculate all the element index
-        // let newreduceValue = reduceValue.reduce((h1,h2)=>{  // is function ko hum alag ek veriable mai b bana sakta ur parameter mai function name add kr dy gye
-        //     return h1+h2;
-        // })
-        // console.log(newreduceValue);
+        let reduceValue = [3, 4, 5, 3, 9, 7]  // he calculate all the element index
+        let newreduceValue = reduceValue.reduce((h1,h2)=>{  // is function ko hum alag ek veriable mai b bana sakta ur parameter mai function name add kr dy gye
+            return h1+h2;
+        })
+        console.log("Total value sum is :",newreduceValue);
 
         let addReduce = [1,2,3,4,5]
         let newReduce = addReduce.reduce((a,b)=>{
-              return a+b
+              return a+b;
         })
         console.log(newReduce)
 
